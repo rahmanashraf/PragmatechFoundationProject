@@ -1,0 +1,52 @@
+body {
+    font-size: 12px;
+}
+
+#main {
+    height: 800px;
+    background-image: url(../images/banner-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* filter: brightness(51%); */
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-top-bar {
+    padding: 15px 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main-top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-top-bar-info span {
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.main-top-bar-info span i {
+    color: #da2c46;
+    margin-right: 10px;
+}
+
+.main-top-bar-social {
+    font-size: 1.2em;
+}
+
+.main-top-bar-social i {
+    margin: 0px 5px;
+}
+
+.main-top-bar-social a {
+    color: white;
+    transition: all .3s ease;
+}
+
+.main-top-bar-social a:hover {
+    color: #da2c46;
+} 

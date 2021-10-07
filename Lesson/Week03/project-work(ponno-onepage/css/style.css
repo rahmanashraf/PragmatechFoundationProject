@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+}
+
+
+
+
+.features-items{
+    width: 1000px;
+    height:300px;
+
+    margin:0 auto;
+
+
+}
+.features-item{
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    border: 1px solid rgb(233, 20, 180);
+    margin: 15px;
+}

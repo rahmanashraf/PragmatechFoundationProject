@@ -1,0 +1,57 @@
+.main{
+    height: 1000px;
+    border: 1px solid green;
+}
+.mainicon{
+    width: 150px;
+    height: 100px;
+    margin-left: 300px;
+    display: inline-block;
+   
+
+}
+.mainnavigation{
+    display: inline-block;
+    
+   
+
+}
+.navigation_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dfc457;
+    position:sticky;/*eğer sorun olursa fixed olarak değiştirin*/
+    top:0px;
+    width: 100%;
+  }
+  .navigation_bar li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  .navigation_bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }.navigation_bar li:last-child {
+    border-right: none;
+  }
+  
+  .navigation_bar li a:hover:not(.active) {
+    background-color: rgb(9, 114, 18);
+  }
+  .navigation_bar .active {
+    background-color: #072e38; /*#4CAF50*/
+  }
+    
+.mainhead{
+    width: 100%;
+    height: 700px;
+
+    text-align: center;
+
+}

@@ -1,0 +1,29 @@
+.box1 {
+    background-color: blue;
+}
+.box2 {
+    background-color: brown;
+}
+.box3{
+    background-color: chartreuse;
+}
+.box4{
+    background-color: cyan;
+}
+.box5{
+    background-color: darkgreen;
+}
+.box6{
+    background-color: darkmagenta;
+}
+.container{
+    display: grid;
+    grid-template-rows: 150px 200px;
+    grid-template-columns: 200px 170px 270px;
+    
+}
+.box{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
