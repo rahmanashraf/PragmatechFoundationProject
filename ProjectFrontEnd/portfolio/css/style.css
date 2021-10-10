@@ -2,14 +2,15 @@
 background: #121616;
 padding: 59px 0px;
 }
-/* .different-color{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    transform: rotate(-15deg);
-    top: 0%;
-    left: 0%;
-    color: #ffb400;} */
+.different-color{
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(
+-15deg);
+    left: -83%;
+    top: -50%;
+}
 
 .header-photo{
     background-color: black;
@@ -25,6 +26,7 @@ padding: 59px 0px;
     overflow: hidden;
     padding-left: 15px;
     padding-right:15px ;
+   
 }
 .header-photo img{
     width:100%;
@@ -38,6 +40,9 @@ padding: 59px 0px;
     top: 28%;
     left: 45%;
     /* transform: translate(-50%,-50%); */
+
+}
+.header-content span{
 
 }
 
@@ -59,49 +64,61 @@ text-transform: uppercase
 .header-content p{
     font-family: 'Open Sans', sans-serif;
     margin: 15px 0 28px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 35px;
     color: white;
-    width: 450px;
+    width: 700px;
     height: 138px;
 }
 .header-content button{
     border-color: #ffb400;
     border-radius: 35px;
-    /* padding: 16px 70px 16px 35px; */
+    padding: 0px 0px 0px 6px;
     font-size: 15px;
     font-weight: 600;
     color: #fff;
     background-color: transparent;
     text-transform: uppercase;
-   
+    overflow: hidden;
+    
+    
+    
+}
+.header-content button :hover{
+color: #ffb400;
+transition: 250ms all ease-in-out;
+    
 
     
 }
 .header-content i{
     border: 1px solid #ffb400;
     border-radius: 50%;
-    border-color: #ffb400;
+    background-color: #ffb400;
     margin-left: 50px;
     padding: 25px;
+    font-size: 20px;
+    font-weight:bolder;
+    
     
 }
 .header-content button span{
     margin-left: 50px;
+    font-size: 18px;
 
 }
 .nav-bar{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left:95%;
     transform: translate(-50%, -50%);
-    
-    
-    
+
 }
 
 .nav-bar ul li a{
     text-align: center;
+    
+    
 }
 .nav-bar i{
     border: 1px solid #ffb400;
@@ -112,5 +129,8 @@ text-transform: uppercase
     font-size: 20px;
     background: #121616;
 
+}
+.nav-bar ul li{
+    padding-bottom: 22px;
 }
 
