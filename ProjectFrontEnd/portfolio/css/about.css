@@ -1,0 +1,16 @@
+#aboutpage {
+    background-color: rgb(212, 187, 187);
+    height: 100vh;
+}
+
+.header-title {
+    text-align: center;
+    height: 200px;
+}
+
+.h1 {}
+
+.flexible-area {
+    display: flex;
+    justify-content: space-between;
+}
