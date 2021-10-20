@@ -1,0 +1,26 @@
+.button {
+    width: 20px;
+    height: 20px;
+}
+
+.qutular {
+    display: flex;
+}
+
+.qutu1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.qutu2 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.qutu3 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
