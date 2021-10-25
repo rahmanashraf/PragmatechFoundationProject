@@ -1,0 +1,30 @@
+    .bttn {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .button {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .joystick {
+        border: 1px solid red;
+        width: 200px;
+        height: 100px;
+        transition: 1s ease;
+    }
+    
+    .main {
+        width: 1200px;
+        height: 500px;
+        margin: 0px;
+    }
+    
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        height: 600px;
+    }

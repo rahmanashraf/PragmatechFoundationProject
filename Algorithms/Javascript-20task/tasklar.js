@@ -23,17 +23,19 @@ aybrats = x++
     document.write(x) */
 
 
-/* TASK3.il dəyəri daxil edildiyi zaman onun necə ay və necə gün olduğunu return edən funksiya yazın
-    NOT-PRoblemi hell ettim amma nese netice gec berpa olunur alert edende bele olmurdu amma documentwritedan sonra bele oldu neyse allah bereket versin
+/*TASK3.il dəyəri daxil edildiyi zaman onun necə ay və necə gün olduğunu
+return edən funksiya yazın
+NOT - PRoblemi hell ettim amma nese netice gec berpa olunur alert edende bele olmurdu amma documentwritedan sonra bele oldu neyse allah bereket versin
+*/
 function ilhesabi(ay = 12, gun = 365) {
-    let netice = prompt(" x qeder il nece aydir")
+    let netice = prompt(" x qeder il nece aydir ve neche gundur?")
     let cavab1 = ay * netice
     let cavab2 = gun * netice
     document.write("verdiyiniz sayda il " + cavab1 + "  aydir " + cavab2 + "  gundur")
 
 
 }
-ilhesabi()*/
+ilhesabi()
 
 
 
@@ -72,8 +74,8 @@ console.log(yas) */
 
 
 
-let samir = 'Proqramalaşdırma nə qədər çox şey bildiyinizlə yox, bildiyinizlə ortaya çıxardığınız işlərlə maraqlanır'
-    // console.log(samir.length)  TASK7.8 deqiq bilmedim hansini elemis oldum neyse saol
+// let samir = 'Proqramalaşdırma nə qədər çox şey bildiyinizlə yox, bildiyinizlə ortaya çıxardığınız işlərlə maraqlanır'
+// console.log(samir.length)  TASK7.8 deqiq bilmedim hansini elemis oldum neyse saol
 
 // netice = samir.split(",")
 // console.log(netice)     Task12 de bele getdi
@@ -86,5 +88,5 @@ let samir = 'Proqramalaşdırma nə qədər çox şey bildiyinizlə yox, bildiyi
 // netice = samir.split(" ", 10)
 // console.log(netice)                        TASK11 CONGRATULATIONNNNN QAQAS
 
-kabab = samir.search(ortaya)
-console.log(kabab)
+// kabab = samir.search(ortaya)
+// console.log(kabab)
