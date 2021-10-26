@@ -54,8 +54,6 @@ img {
     /* transform: translate(-50%,-50%); */
 }
 
-.header-content span {}
-
 .header-content h1 {
     color: #ffb400;
     font-size: 60px;
@@ -137,4 +135,153 @@ img {
 
 .nav-bar ul li {
     padding-bottom: 22px;
+}
+
+#aboutpage {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.header-title {
+    text-align: center;
+    height: 200px;
+}
+
+.personalinfos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.personalinfos ul li {
+    padding: 10px;
+}
+
+.personalinfos ul li span {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    color: white;
+}
+
+.stats-item {
+    padding: 20px, 30px 25px 40px;
+    border-radius: 5px;
+    border: 1px solid #3d3d3d;
+    width: 270px;
+    height: 155px;
+}
+
+.stats-item h3 {
+    color: #ffb400;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    display: inline-block;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stats-item p {
+    color: white;
+}
+
+.statsitems {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.col-5 h1 {
+    padding-bottom: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    color: white;
+    font-style: bold;
+    transform: translate(8%, 0px);
+}
+
+.downloadcv button {
+    border-color: #ffb400;
+    border-radius: 35px;
+    padding: 0px 0px 0px 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.downloadcv button :hover {
+    color: #ffb400;
+    transition: 250ms all ease-in-out;
+}
+
+.downloadcv i {
+    border: 1px solid #ffb400;
+    border-radius: 50%;
+    background-color: #ffb400;
+    margin-left: 50px;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.downloadcv button span {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.downloadcv {
+    padding-top: 30px;
+}
+
+#about-text {
+    background-color: black;
+    position: relative;
+    padding-top: 50px;
+}
+
+.header-title {
+    color: whitesmoke;
+}
+
+.header-title h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    transform: translate(0, 0);
+}
+
+.header-title h1 span {
+    color: #ffb400;
+    padding-left: 15px;
+}
+
+.position-center {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    transform: translate(0, 0);
+    font-weight: 900;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    color: rgba(255, 255, 255, 0.07);
 }
