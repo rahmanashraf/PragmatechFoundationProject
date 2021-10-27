@@ -292,6 +292,11 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     right: 2%;
+    margin-block-start: -6em;
+    margin-block-end: 100em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
 .navigation-fixed ul li {
@@ -352,7 +357,7 @@ img {
 .exper-item span {
     color: #fff;
     font-size: 12px;
-    padding: 1px 10px;
+    padding: 5px 10px;
     display: inline-block;
     margin-bottom: 12px;
     border-radius: 20px;
@@ -361,4 +366,27 @@ img {
     opacity: .8;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+}
+
+.exper-item p {
+    margin: 0;
+    color: #eee;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 55px;
+    margin-inline-end: 0px;
+}
+
+.exper-item h5 {
+    position: relative;
+    left: 10%;
+    top: -6%;
+    font-size: 20px;
+    margin: 7px 0 10px;
+    text-transform: uppercase;
+    font-style: bold;
+    font-family: 'Poppins', sans-serif;
 }
