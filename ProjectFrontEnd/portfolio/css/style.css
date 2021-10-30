@@ -596,3 +596,79 @@
     background-color: #252525;
     font-size: 20px;
 }
+
+#contact2 {
+    background-color: #111;
+}
+
+.con2-all {
+    display: flex;
+    top: 60px;
+    position: relative;
+}
+
+.coninput {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coninput input {
+    border: 1px solid #111;
+    background: #252525;
+    padding: 11px 15px;
+    border-radius: 35px;
+    margin-bottom: 13px;
+    color: #fff;
+}
+
+.con-text input {
+    border: 1px solid #111;
+    background: #252525;
+    color: #fff;
+    width: 100%;
+    padding: 12px 26px;
+    margin-bottom: 20px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.coninput input:nth-child(2) {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.con-text input::placeholder {
+    position: absolute;
+}
+
+.con-orta button {
+    border-color: #ffb400;
+    border-radius: 35px;
+    padding-right: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    overflow: hidden;
+    line-height: 1.4;
+    z-index: 1;
+}
+
+.con-orta button i {
+    border-radius: 50%;
+    border: 1px solid #ffb400;
+    font-size: 20px;
+    position: relative;
+    left: 45px;
+    background-color: #ffb400;
+    padding: 17px;
+}
+
+.con-orta button span {
+    position: relative;
+    left: 20px;
+}
