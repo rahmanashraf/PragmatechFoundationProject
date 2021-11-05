@@ -1,0 +1,30 @@
+.obsi {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div button {
+    border: 1px solid black;
+    border-radius: 35px;
+    padding: 30px;
+    background-color: blue;
+}
+
+.div span {
+    border: 1px solid red;
+    background-color: green;
+    font-size: 15px;
+}
+
+.divspan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

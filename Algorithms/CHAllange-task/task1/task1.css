@@ -1,0 +1,21 @@
+.raket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.salamade {
+    border: 1px solid blue green;
+    background-color: salmon;
+    width: 150px;
+    height: 50px;
+    font-family: inherit;
+    border-radius: 35px;
+}
+
+.rgbler {}
