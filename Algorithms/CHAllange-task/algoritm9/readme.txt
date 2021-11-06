@@ -1,0 +1,1 @@
+user-ın daxil etdiyi sözün sonuncu hərfini qaytarmaq.

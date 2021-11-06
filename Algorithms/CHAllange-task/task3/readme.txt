@@ -1,0 +1,1 @@
+Autp write text - verilen sözü hərfbəhərf html də yazılsın və söz bitəndə yenidən başlasın
