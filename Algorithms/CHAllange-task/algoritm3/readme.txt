@@ -1,1 +1,3 @@
-user tərəfindən daxil 2 ədədin 30-70 arasında olmasını yoxlamaq. Rəqəmlərin hər ikisinin, yalnız birinin və ya heç birinin aralıqda olub-olmaması şərtlərini yoxlamaq və uyğun mesajı çıxarmaq.
+user tərəfindən daxil edilen  2 ədədin her iksinin 30-70 arasında olmasını yoxlamaq.
+sertlerde reqemlerin her iksinin,yalniz birinin, ve ya hecbirinin sertlere uyub uymamasini qeyd etmek ve
+ uyğun mesajı çıxarmaq.
