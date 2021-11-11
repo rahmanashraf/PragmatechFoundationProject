@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.algo {
+    margin-left: 30%;
+    margin-right: 25%;
+    display: flex;
+}
+
+input {
+    padding-top: 5px;
+    margin-top: 4px;
+}
+
+#name {
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+
+.button {
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    left: 63.15%;
+}
+
+table {
+    margin-left: 30%;
+    margin-right: 25%;
+}
+
+table {
+    background: #0984e3;
+    margin: 5px;
+    width: 98%;
+    color: #fff;
+}
+
+td,
+th {
+    border: 1px solid white;
+    border-spacing: 0px;
+    margin: 0px;
+}

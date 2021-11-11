@@ -126,10 +126,11 @@
 .nav-bar i {
     border-radius: 50%;
     color: white;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     font-size: 15px;
     background: #252525;
     cursor: pointer;
+    display: block;
 }
 
 .nav-bar ul li {
