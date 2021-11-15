@@ -5,5 +5,5 @@ os.chdir("/Users/HP/Desktop")  ###papkanin adin yazirsan ora direct elir CHangeD
 # print(os.listdir())  ###papkanin icini gosterir
 
 os.mkdir("OsModule")   ###TASK1....OsModule adinda Folder yaradildi..
-for document in os.listdir():
-    print(document)
+# for document in os.listdir():   Papkanin icindeki filellar goster
+#     print(document)
