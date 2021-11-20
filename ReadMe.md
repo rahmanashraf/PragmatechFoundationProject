@@ -1,5 +1,4 @@
 # Hi I'm Rahman Ashraf
-![!](rehmangr.jpg)
 ### About me
 - First day 21.10.1995 (I rememember) [21oct](https://tr.wikipedia.org/wiki/21_Ekim)
 - Graduated from BSU-International Relationship faculty
