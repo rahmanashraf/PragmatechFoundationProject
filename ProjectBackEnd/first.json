@@ -1,0 +1,13 @@
+{
+    "marka": "IphoneX",
+    "model": "AppleIOS",
+    "anbarveziyeti": true,
+    "kamera": {
+        "on": 8,
+        "arxa": 12.5
+    },
+    "qiymet": 1000,
+    "rengler": ["black", "NightDark", "white"]
+
+
+}
