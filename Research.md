@@ -144,7 +144,7 @@ Nesne odaklı düşünme back-end‘de işe yarar. Çünkü çoğu zaman sonraki
 
 Fonksiyonel programlamada ve nesne yönelimli programlamada verileri manipüle etmek ve depolamak için farklı yöntemler kullanılır. Fonksiyonel programlamada, veriler nesnelerde saklanmaz, sadece fonksiyonlar oluşturularak dönüştürülebilir. Nesne yönelimli programlamada, veriler nesnelerde saklanır. Nesne yönelimli programlama yaygın olarak kullanılır ve aynı zamanda başarılıdır da.
 
-Nesne yönelimli programlamada, kalıtım düzeylerini artırırken nesneleri korumak gerçekten zordur. Bu, aynı zamanda kapsülleme ilkesini de bozar ve hatta tamamen modüler olmaktan çıkarır. Fonksiyonel programlamada nesne kullanıldığında ise, fonksiyonları çalıştırmak için her zaman yeni bir nesne gerekir ve uygulamayı çalıştırmak çok fazla belleğe mal olabilir.
+Nesne yönelimli programlamada, kalıtım düzeylerini artırırken nesneleri korumak gerçekten zordur. Bu, aynı zamanda kapsülleme ilkesini de bozar ve hatta tamamen modüler olmaktan çıkarır. Fonksiyonel programlamada nesne kullanıldığında ise, fonksiyonları çalıştırmak için her zaman yeni bir nesne gerekir ve uygulamayı çalıştırmak çok fazla belleğe mal olabilir
 
 Paradigmaları, yaklaşımları, teknikleri, yöntemleri kullanım alanına göre seçmek lazım. Seçeneklerinizi biliyorsanız ne yaptığınızı bilmenize çok yakınsınız demektir. 
 
