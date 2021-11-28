@@ -30,7 +30,47 @@ class Register():
         else:
             print("sehv yazdin")
     
+    def telnumber(self):
+        self.phone=input(str("Nomreni daxil et daxil et:+994 "))
+        val = True
+
+        if len(self.phone) !=9:
+            print('Uzunlugu 9 dan cox ve ya az ola bilmez')
+            val
+            
+        if not all(char.isdigit() for char in self.phone):
+            print('Reqemlerden ibaret olmalidir')
+            val
+        if self.phone.startswith("50",0,2):
+            print("Yigdiginiz nomre duzgundur")
+            val
+        elif self.phone.startswith("51",0,2):
+            print("Yigdiginiz nomre duzgundur")
+            val
+        elif self.phone.startswith("10",0,2):
+            print("Yigdiginiz nomre duzgundur")
+            val
+        elif self.phone.startswith("99",0,2):
+            print("Yigdiginiz nomre duzgundur")
+            val
+        elif self.phone.startswith("55",0,2):
+            print("Yigdiginiz nomre duzgundur")
+            val
+        elif self.phone.startswith("70",0,2):
+            print("Yigdiginiz nomre duzgundur")
+            val
+        elif self.phone.startswith("77",0,2):
+            print("Yigdiginiz nomre duzgundur")
+            val
+
+        else:
+            print("SEHV DUWMUSUZ")
+            val=False
         
+        
+        
+
+
     def paSSword(self):
         self.password=input(str("Parolu daxil et: "))
         val = True
@@ -56,11 +96,15 @@ class Register():
                 val = False
         if val:
             return val
-            
 
-# user=Register("Elmar","Memmedov","jdsjdh@gmail.com","055-445-55-55","12345","Sebuhi")
-araba1=Register()
-araba1.Username()
-araba1.Surname_()
-araba1.Mailiyaz()
-araba1.paSSword()
+    def fewinfo(self):
+        self.password=input(str("Haqqinda biraz info ver: "))
+
+        
+Goster=Register()
+Goster.Username()
+Goster.Surname_()
+Goster.Mailiyaz()
+Goster.paSSword()
+Goster.telnumber()
+Goster.fewinfo()
