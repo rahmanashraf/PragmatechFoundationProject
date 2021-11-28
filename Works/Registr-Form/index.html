@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(202, 202, 202);
+        }
+        
+        .div {
+            position: absolute;
+            left: 40%;
+            top: 30%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input {
+            padding: 7px;
+            margin-bottom: 10px;
+        }
+        
+        form :nth-child(7) {
+            color: white;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <form action="registr.py" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="surname" placeholder="Surname">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="number" name="number" placeholder="Tel-no">
+            <input type="password" name="password" placeholder="Password">
+            <input type="text" name="text" placeholder="Qisa melumat ver">
+            <input type="button" name="DAXIL OL" value="Gonder">
+        </form>
+    </div>
+</body>
+
+</html>
