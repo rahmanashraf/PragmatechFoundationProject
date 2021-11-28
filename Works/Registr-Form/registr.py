@@ -15,7 +15,7 @@ class Register():
         if self.name != "" :
             print("duzgundur")
         else:
-            print('Bu xana bosh olmaz')
+            return self.name
 
     def Surname_(self):
         self.surname=input(str("Soyadini daxil edin: "))
@@ -90,10 +90,16 @@ class Register():
         if not any(char.isupper() for char in self.password):
             print('Minimum bir eded boyuk herf olmalidir.')
             val = False
+
+        count=0
+        for i in self.password:    
+            if(i.islower()):
+                count=count+1  
+                if count>1:
+                    val
+                else:
+                    val=False
             
-        if not any(char.islower() for char in self.password):
-                print('Minimum bir eded kicik herf olmalidir')
-                val = False
         if val:
             return val
 
