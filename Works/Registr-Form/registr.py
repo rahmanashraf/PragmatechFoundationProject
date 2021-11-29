@@ -1,7 +1,7 @@
 import re
 regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 class Register():
-
+    
     def __init__(self,name="rehman",surname="abdullayev",email="rehman@gmail.com",phone="0502015187",password="rehman",qisamelumat="rehmanun"):
         self.name=name
         self.surname=surname
@@ -106,11 +106,15 @@ class Register():
     def fewinfo(self):
         self.password=input(str("Haqqinda biraz info ver: "))
 
-        
-Goster=Register()
-Goster.Username()
-Goster.Surname_()
-Goster.Mailiyaz()
-Goster.paSSword()
-Goster.telnumber()
-Goster.fewinfo()
+def ready():
+    while True:
+        Goster=Register()
+        Goster.Username()
+        Goster.Surname_()
+        Goster.Mailiyaz()
+        Goster.paSSword()
+        Goster.telnumber()
+        Goster.fewinfo()
+    else:
+        print("errooo")
+
