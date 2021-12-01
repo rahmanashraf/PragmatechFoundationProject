@@ -5,22 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
     <style>
-        .input {
-            font-size: 50px;
-            text-align: center;
-            font-family: sans-serif;
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(202, 202, 202);
+        }
+        
+        .div {
+            position: absolute;
+            left: 40%;
+            top: 30%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input {
+            padding: 7px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        
+        form :nth-child(7) {
+            color: white;
+            background-color: grey;
         }
     </style>
 </head>
 
 <body>
-    <form action="/" method="POST">
-        <input type="text" name="ad" id="">
-        <input type="text" name="parol" id="">
-        <input type="submit" name="" id="">
-    </form>
+    <div class="div">
+        <form action="/" method="post">
+            <input type="text" name="ad" placeholder="Username ">
+            <input type="password " name="parol " placeholder="Surname ">
+            <input type="email " name="email " placeholder="E-mail ">
+            <input type="number " name="number " placeholder="Tel-no ">
+            <input type="password " name="password " placeholder="Password ">
+            <input type="text " name="text " placeholder="Qisa melumat ver ">
+            <input type="submit " name="submit " id=" " value="Done ">
+        </form>
+    </div>
 </body>
 
 </html>
