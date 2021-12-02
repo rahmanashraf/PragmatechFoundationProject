@@ -2,6 +2,10 @@
     margin: 0 auto;
 }
 
+
+/* INDEX.HTML css codes....1.navbar biraz yuxari qalxmalidi.birazda olcusu balacalassa.okdu....2.nav-barin ustune gelende cixmalidi cole o problem qalib
+3.responsivliy qalib */
+
 #mainpage {
     background-color: #111;
     height: 100vh;
@@ -80,19 +84,6 @@
     height: 100px;
 }
 
-
-/* .header-content button {
-    border-color: #ffb400;
-    border-radius: 35px;
-    padding: 0px 20px;
-    font-weight: 600;
-    color: #fff;
-    background-color: transparent;
-    text-transform: uppercase;
-    overflow: hidden;
-    cursor: pointer;
-} */
-
 .header-content a {
     transition: 1s ease-in-out all;
 }
@@ -110,13 +101,9 @@
     transform: translateX(35%);
 }
 
-.header-content button span {
-    font-size: 15px;
-}
-
 .nav-bar {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 95%;
     transform: translate(-50%, -50%);
 }
@@ -144,15 +131,14 @@
 }
 
 
-/* ANA SEHIFE FINISH */
+/* index.html finish */
+
+
+/* about.html started */
 
 #aboutpage {
     background-color: #111;
     height: 100vh;
-}
-
-.header-title {
-    text-align: center;
 }
 
 .personalinfos {
@@ -219,65 +205,19 @@
     transform: translate(8%, 0px);
 }
 
-.downloadcv button {
-    border-color: #ffb400;
-    border-radius: 35px;
-    padding: 0px 0px 0px 6px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    background-color: transparent;
-    text-transform: uppercase;
-    overflow: hidden;
-}
-
-.downloadcv button :hover {
-    color: #ffb400;
-    transition: 250ms all ease-in-out;
-}
-
-.downloadcv i {
+.col-5 .test i {
     border: 1px solid #ffb400;
     border-radius: 50%;
     background-color: #ffb400;
-    margin-left: 50px;
-    padding: 25px;
+    padding: 15px;
     font-size: 20px;
     font-weight: bolder;
-}
-
-.downloadcv button span {
-    margin-left: 50px;
-    font-size: 18px;
-}
-
-.downloadcv {
-    padding-top: 30px;
-}
-
-#about-text {
-    background-color: black;
     position: relative;
-    padding-top: 50px;
+    left: 21px;
 }
 
-.header-title {
-    color: whitesmoke;
-    padding-top: 10%;
-}
-
-.header-title h1 {
-    font-size: 30px;
-    position: relative;
-    color: rgb(39, 34, 34);
-    font-weight: 900;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-}
-
-.header-title h1 span {
-    color: #ffb400;
-    padding-left: 15px;
+.col-5 .test a {
+    text-decoration: none;
 }
 
 .position-center {
@@ -321,7 +261,7 @@
     color: white;
     padding: 20px;
     font-size: 14px;
-    background: #121616;
+    background: #252525;
     cursor: pointer;
 }
 
@@ -406,6 +346,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* ABOUT.html finish  experiment e el gezdirilmelidi vacib seliqesizdi yarimcig kim durur */
+
+
+/* BRief sehifesinde problem gorunmur javascripti yigilmalidi wekillere link verilmeli linkler altinda gorduyum 
+iwler gorunmelidi.... */
+
 #brief {
     background-color: #111;
 }
@@ -449,6 +396,14 @@
     background: #3a3b3b;
 }
 
+
+/* brief page finished */
+
+
+/* COntact page started 
+
+*/
+
 #worksport {
     background-color: #111;
     position: relative;
@@ -480,37 +435,6 @@
 
 #worksport h1 span {
     color: #ffb400;
-}
-
-.blog-items {
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-    gap: 20px;
-    box-sizing: border-box;
-}
-
-.card {
-    background-color: #252525;
-}
-
-.card-body {
-    color: #fff;
-}
-
-#blogpage {
-    background-color: #111;
-    padding-top: 40px;
-    height: 180vh;
-}
-
-.navigation-fixed ul li {
-    padding-bottom: 13px;
-    list-style-type: none;
-}
-
-#contact2 {
-    background-color: #111;
-    height: 95vh;
 }
 
 .con2-all {
@@ -558,34 +482,14 @@
     position: absolute;
 }
 
-.con-orta a button {
-    border-color: #ffb400;
-    border-radius: 35px;
-    padding-right: 45px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    background-color: transparent;
-    text-transform: uppercase;
-    overflow: hidden;
-    line-height: 1.4;
-    z-index: 1;
-    text-transform: uppercase;
-}
-
 .con-orta button i {
     border-radius: 50%;
     border: 1px solid #ffb400;
     font-size: 20px;
     position: relative;
-    left: 45px;
+    left: 21px;
     background-color: #ffb400;
     padding: 17px;
-}
-
-.con-orta button span {
-    position: relative;
-    left: 20px;
 }
 
 .connav-bar {
@@ -674,21 +578,14 @@
     font-size: 17px;
 }
 
+#contact2 {
+    background-color: #111;
+    height: 95vh;
+}
+
 .works1 {
     position: relative;
     left: 26%;
-    font-size: 113px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 1000;
-    letter-spacing: 10px;
-    line-height: 0.6;
-    color: rgba(255, 255, 255, 0.07);
-}
-
-.works2 {
-    position: relative;
-    left: 34%;
     font-size: 113px;
     text-align: center;
     text-transform: uppercase;
@@ -702,43 +599,6 @@
     background-color: #ffb400;
     transition: 250ms ease-out all;
 }
-
-
-/* #aboutpage2 {
-    background-color: #111;
-}
-
-.generally {
-    display: flex;
-    justify-content: space-around;
-}
-
-.genbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-}
-
-.qutu1 {
-    width: 270px;
-    height: 155px;
-    border: 0.5px solid;
-}
-
-.sagsol {
-    display: flex;
-    justify-content: start;
-    align-content: start;
-}
-
-.genyazi {
-    color: white;
-}
-
-.sagsol li {
-    list-style: none;
-} */
 
 .test button {
     overflow: hidden;
@@ -769,47 +629,51 @@
 }
 
 
-/* .nav-bar ul li {
-    width: 50px;
-    height: 50px;
-    list-style: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s;
-    margin: 20px 0;
-    border-radius: 50%;
-    background: #2b2a2a;
+/* COntact page finish */
+
+
+/* Blog page started
+
+
+*/
+
+.blog-items {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 20px;
+    box-sizing: border-box;
 }
 
-.nav-bar ul li h2 {
-    /* z-index: -1; */
-
-
-/* position: absolute;
-top: 0;
-right: 0;
-opacity: 0;
-color: #fff;
-line-height: 50px;
-font-weight: 500;
-transition: all .6s ease;
-border-radius: 30px;
-text-transform: uppercase;
-padding: 0 70px 0 30px;
-height: 50px;
-
+.card {
+    background-color: #252525;
 }
-.nav-bar ul li:hover .nav-bar ul li h2 {
-    /* z-index: 999; */
 
-
-/* opacity: 1;
-    background: #ffb400;
-}
-.fa-home {
-    z-index: 999;
+.card-body {
     color: #fff;
 }
-/* */
+
+#blogpage {
+    background-color: #111;
+    padding-top: 40px;
+    height: 180vh;
+}
+
+.navigation-fixed ul li {
+    padding-bottom: 13px;
+    list-style-type: none;
+}
+
+.works2 {
+    position: relative;
+    left: 34%;
+    font-size: 113px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 10px;
+    line-height: 0.6;
+    color: rgba(255, 255, 255, 0.07);
+}
+
+
+/* Blog page finished */
