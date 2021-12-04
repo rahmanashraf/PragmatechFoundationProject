@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+.background {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.millioner {
+    position: absolute;
+    top: 10px;
+}
+
+#ButtonBasla {
+    background-color: #4d2065;
+    border-color: #8e7eb7;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: 350px;
+    left: 555px;
+}
+
+.background2 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.millioner2 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    ;
+}
+
+#ad {
+    background-color: #4d2065;
+    border-color: #8e7eb7;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: 350px;
+    left: 300px;
+    color: white;
+    border-radius: 40px;
+}
+
+.melumat {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 73px;
+    border: 1px solid black;
+    border-radius: 35px;
+    align-items: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow: violet;
+    background-color: #4d2065;
+}
