@@ -106,3 +106,10 @@ body {
     background-color: #4d2065;
     cursor: pointer;
 }
+
+#sual2,
+#sual3,
+#sual4,
+#sual5 {
+    display: none;
+}

@@ -22,23 +22,67 @@
 
             <div class="result">{{data1}} {{data2}}</div>
         </div>
-        <div class="suallar">
+        <div class="suallar" id="sual1">
             <div class="divsual">
                 <p>azerbaycanin paytaxti haradir?</p>
             </div>
             <div class="cavablar">
-                <div class="cavab1"><span>BAki</span></div>
-                <div class="cavab1"><span>sumqayit</span></div>
-                <div class="cavab1"><span>gence</span></div>
-                <div class="cavab1"><span>kurdexani</span></div>
+                <div class="cavab1" id="sehv1-1" onclick="sehv1_2()"><span>BAki</span></div>
+                <div class=" cavab1 " id="duzgun1" onclick="duzgun()"><span>sumqayit</span></div>
+                <div class="cavab1 " id="sehv1-2 " onclick="sehv1_2()"><span>gence</span></div>
+                <div class="cavab1" id="sehv1-3" onclick="sehv1_3()"><span>kurdexani</span></div>
             </div>
         </div>
-        <audio id="myAudio" loop autoplay>
-        <source src="../static/sound/suallar.mp3" type="audio/mpeg">
+        <div class=" suallar " id="sual2">
+            <div class="divsual ">
+                <p>turkiye</p>
+            </div>
+            <div class="cavablar ">
+                <div class="cavab1" id="sehv2-1" onclick="sehv2_2()"><span>BAki</span></div>
+                <div class="cavab1 " id="sehv2-2 " onclick="sehv2_2()"><span>gence</span></div>
+                <div class="cavab1" id="sehv2-3" onclick="sehv2_3()"><span>kurdexani</span></div>
+                <div class=" cavab1 " id="duzgun2 " onclick="duzgun2()"><span>sumqayit</span></div>
+            </div>
+        </div>
+        <div class=" suallar " id="sual3">
+            <div class="divsual ">
+                <p>avstria</p>
+            </div>
+            <div class="cavablar ">
+                <div class=" cavab1 " id="duzgun3 " onclick="duzgun3()"><span>sumqayit</span></div>
+                <div class="cavab1" id="sehv3-1" onclick="sehv3_2()"><span>BAki</span></div>
+                <div class="cavab1 " id="sehv3-2 " onclick="sehv3_2()"><span>gence</span></div>
+                <div class="cavab1" id="sehv3-3" onclick="sehv3_3()"><span>kurdexani</span></div>
+            </div>
+        </div>
+        <div class=" suallar " id="sual4">
+            <div class="divsual ">
+                <p>belcika</p>
+            </div>
+            <div class="cavablar ">
+                <div class="cavab1" id="sehv4-1" onclick="sehv4_2()"><span>BAki</span></div>
+                <div class=" cavab1 " id="duzgun4 " onclick="duzgun4()"><span>sumqayit</span></div>
+                <div class="cavab1 " id="sehv4-2 " onclick="sehv4_2()"><span>gence</span></div>
+                <div class="cavab1" id="sehv4-3" onclick="sehv4_3()"><span>kurdexani</span></div>
+            </div>
+        </div>
+        <div class=" suallar " id="sual5">
+            <div class="divsual ">
+                <p>amerika</p>
+            </div>
+            <div class="cavablar ">
+                <div class="cavab1" id="sehv5-1" onclick="sehv5_2()"><span>BAki</span></div>
+                <div class="cavab1 " id="sehv5-2 " onclick="sehv5_2()"><span>gence</span></div>
+                <div class=" cavab1 " id="duzgun5 " onclick="duzgun5()"><span>sumqayit</span></div>
+                <div class="cavab1" id="sehv5-3" onclick="sehv5_3()"><span>kurdexani</span></div>
+            </div>
+        </div>
+        <audio id=" myAudio " loop autoplay>
+        <source src="../static/sound/suallar.mp3 " type="audio/mpeg ">
         </audio>
 
     </div>
-
+    <script src="../static/js/script.js"></script>
 </body>
 
 </html>
