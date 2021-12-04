@@ -17,15 +17,15 @@
             <div class="timer" id="app">
             </div>
             <h3>who wants to be a Proggrammer</h3>
-            <div class="result"></div>
+            <div class="result">{{data1}} {{data2}}</div>
         </div>
         <audio id="myAudio" loop autoplay>
         <source src="../static/sound/suallar.mp3" type="audio/mpeg">
         </audio>
-        <form action="/game" method="post">
+        <form action="/game" method="POST">
             <input type="text" name="ad" id="ad" placeholder="Adınızı qeyd edin">
             <input type="text" name="soyad" id="ad" placeholder="Soyadınızı qeyd edin">
-            <input type="submit" name="" id="ad">
+            <input type="submit" id="ad">
 
         </form>
     </div>
