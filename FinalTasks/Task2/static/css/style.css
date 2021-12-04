@@ -92,7 +92,12 @@ body {
     transform: translate(0%, 220%)
 }
 
-.cavab1 {
+.cavab1,
+.cavab11,
+.cavab111,
+.cavab1111,
+.cavab11111,
+.cavab111111 {
     width: 100%;
     height: 73px;
     border: 1px solid black;
