@@ -13,12 +13,16 @@
 </head>
 
 <body>
-    <img src="../static/images/main.jpg" class="background2" alt="">
-    <div class="millioner2">
+    <img src="../static/images/main.jpg" class="background2" alt="" id="esas2">
+    <div class="millioner2" id="esas">
         <div class="melumat">
             <div class="timer" id="app">
             </div>
-            <div class="icon"><i class='fas fa-percent'>50</i><i class="fas fa-phone"></i><i class="fas fa-users"></i></div>
+            <div class="icon">
+                <i class='fas fa-percent' id="ellilik" onclick="elli()"></i>
+                <i class="fas fa-phone" onclick="dostazeng()" id="dostazengele"></i>
+                <i class="fas fa-users" onclick="audit()" id="users"></i>
+            </div>
 
             <div class="result">{{data1}} {{data2}}</div>
         </div>
@@ -33,18 +37,18 @@
                 <div class="cavab1" id="sehv1-3" onclick="sehv1()"><span>Ruby</span></div>
             </div>
         </div>
-        <div class=" suallar " id="sual2">
+        <div class="suallar" id="sual2">
             <div class="divsual ">
                 <p>HTML dilinin digər dillərdən əsas fərqi nədir?</p>
             </div>
-            <div class="cavablar ">
+            <div class="cavablar">
                 <div class="cavab1" id="sehv2-1" onclick="sehv2()"><span>OOP yönümlü olmasında</span></div>
                 <div class="cavab1" id="sehv2-2" onclick="sehv2()"><span>Ən sürətli dildir</span></div>
                 <div class="cavab1" id="sehv2-3" onclick="sehv2()"><span>Süni intellektdə əsas götürülməsində</span></div>
                 <div class=" cavab11" id="duzgun2" onclick="duzgun2()" ondblclick="duzgunn2()"><span>Dil qrupuna aid olmamasında</span></div>
             </div>
         </div>
-        <div class=" suallar " id="sual3">
+        <div class="suallar" id="sual3">
             <div class="divsual ">
                 <p>Space-x raket kompleksi dünyaya yeni nə gətirdi?</p>
             </div>
@@ -55,7 +59,7 @@
                 <div class="cavab1" id="sehv3-3" onclick="sehv3()"><span>Sərnişin daşımada istifadə olunmasında</span></div>
             </div>
         </div>
-        <div class=" suallar " id="sual4">
+        <div class="suallar" id="sual4">
             <div class="divsual ">
                 <p>Amazon şirkətinin başlanğıcı nə satşından ibarət idi?</p>
             </div>
@@ -66,21 +70,48 @@
                 <div class="cavab1" id="sehv4-3" onclick="sehv4()"><span>LoveTest</span></div>
             </div>
         </div>
-        <div class=" suallar " id="sual5">
+        <div class="suallar" id="sual5">
             <div class="divsual ">
-                <p>amerika</p>
+                <p>Dünyada ən çox danışılan dil hansıdır</p>
             </div>
             <div class="cavablar">
-                <div class="cavab1" id="sehv5-1" onclick="sehv5()"><span>BAki</span></div>
-                <div class="cavab1" id="sehv5-2" onclick="sehv5()"><span>gence</span></div>
-                <div class=" cavab11" id="duzgun5" onclick="duzgun5()" ondblclick="duzgunn5()"><span>sumqayit</span></div>
-                <div class="cavab1" id="sehv5-3" onclick="sehv5()"><span>kurdexani</span></div>
+                <div class="cavab1" id="sehv5-1" onclick="sehv5()"><span>İngilis dili</span></div>
+                <div class="cavab1" id="sehv5-2" onclick="sehv5()"><span>Fransızca</span></div>
+                <div class=" cavab11" id="duzgun5" onclick="duzgun5()" ondblclick="duzgunn5()"><span>Çin dili</span></div>
+                <div class="cavab1" id="sehv5-3" onclick="sehv5()"><span>Latın dili</span></div>
             </div>
         </div>
-        <audio id=" myAudio " loop autoplay>
+        <audio id="suallar">
         <source src="../static/sound/suallar.mp3 " type="audio/mpeg ">
         </audio>
-
+        <audio id="bye">
+        <source src="../static/sound/bye.mp3 " type="audio/mpeg ">
+        </audio>
+        <audio id="final">
+        <source src="../static/sound/final.mp3 " type="audio/mpeg ">
+        </audio>
+        <audio id="intro">
+        <source src="../static/sound/intro.mp3" type="audio/mpeg ">
+        </audio>
+        <audio id="main">
+        <source src="../static/sound/main.mp3" type="audio/mpeg ">
+        </audio>
+        <audio id="phone">
+        <source src="../static/sound/phone.mp3" type="audio/mpeg ">
+        </audio>
+        <audio id="win">
+        <source src="../static/sound/correct-answer.mp3" type="audio/mpeg ">
+        </audio>
+        <audio id="wrong">
+        <source src="../static/sound/wrong.mp3" type="audio/mpeg ">
+        </audio>
+        <audio id="lets" autoplay>
+        <source src="../static/sound/lets-play.mp3" type="audio/mpeg ">
+        </audio>
+        <audio id="fastes">
+        <source src="../static/sound/fastest-finger.mp3" type="audio/mpeg ">
+        </audio>
+        <video id="video" width="500" height="300" autoplay></video>
     </div>
     <script src="../static/js/script.js"></script>
 </body>
