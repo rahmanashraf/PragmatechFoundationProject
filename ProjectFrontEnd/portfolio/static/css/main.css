@@ -462,7 +462,7 @@ iwler gorunmelidi.... */
     text-transform: uppercase;
 }
 
-.con-text input {
+.con-text textarea {
     border: 1px solid #111;
     background: #252525;
     color: #fff;
@@ -482,7 +482,7 @@ iwler gorunmelidi.... */
     margin-right: 25px;
 }
 
-.con-text input::placeholder {
+.con-text textarea::placeholder {
     position: absolute;
 }
 
@@ -494,6 +494,23 @@ iwler gorunmelidi.... */
     left: 21px;
     background-color: #ffb400;
     padding: 17px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #ffb400;
+}
+
+input[type=text]:focus {
+    border: 1px solid #ffb400;
 }
 
 .connav-bar {
@@ -510,6 +527,11 @@ iwler gorunmelidi.... */
     font-size: 15px;
     background: #252525;
     cursor: pointer;
+}
+
+.connav {
+    position: fixed;
+    top: 40%;
 }
 
 .connav-bar i:hover {
