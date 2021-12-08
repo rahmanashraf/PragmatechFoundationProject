@@ -3,8 +3,7 @@ from datetime import date
 from flask import Flask,render_template
 
 app = Flask(__name__, static_url_path='/static')
-data="Mən Azərbaycanlı veb developer namizədiyəm. Bu günə qədər hər zaman arxasıyca qaçdığım, həmişə marağında olduğum peşə məhz bu idi. İnşallah arzuladığım həyata bu yol ilə sahib olacağam."
-lang="WEB DEVELOPER"
+
 
 
 def calculateAge(birthDate=date(1995, 10, 21)):
