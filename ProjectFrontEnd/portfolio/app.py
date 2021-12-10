@@ -6,32 +6,10 @@ app = Flask(__name__, static_url_path='/static')
 
 
 
-def calculateAge(birthDate=date(1995, 10, 21)):
-    today = date.today()
-    age = today.year - birthDate.year -((today.month, today.day) < (birthDate.month, birthDate.day))
-    return age
-years=calculateAge()     
-
-
 @app.route('/')
 def index ():
-    return render_template("index.html",data=data,lang=lang)
+    return render_template("app/index.html",)
 
-@app.route('/blog')
-def blog ():
-    return render_template("blog.html")
-
-@app.route('/brief')
-def brief ():
-    return render_template("brief.html")
-
-@app.route('/about')
-def about ():
-    return render_template("about.html",years=years)
-
-@app.route('/contact2')
-def contact2 ():
-    return render_template("contact2.html")
 
 
 if __name__ == '__main__':
