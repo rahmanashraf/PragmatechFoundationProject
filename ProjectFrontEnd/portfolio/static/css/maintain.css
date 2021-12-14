@@ -296,6 +296,11 @@ html {
     padding-top: 10px;
 }
 
+.skills_ul {
+    list-style-type: none;
+    display: grid;
+}
+
 #experiment h1 {
     color: white;
     font-size: 26px;
