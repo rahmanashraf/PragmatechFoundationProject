@@ -141,7 +141,7 @@ html {
 
 #aboutpage {
     background-color: #111;
-    height: 100vh;
+    height: 70vh;
 }
 
 .personalinfos {
@@ -296,9 +296,44 @@ html {
     padding-top: 10px;
 }
 
+#skills {
+    background-color: #111;
+    height: 100vh;
+}
+
+#skills h1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    transform: translate(-5%, -50%);
+}
+
 .skills_ul {
     list-style-type: none;
     display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    gap: 10px;
+}
+
+.skills_li {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    opacity: 0.6;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 160px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #experiment h1 {
