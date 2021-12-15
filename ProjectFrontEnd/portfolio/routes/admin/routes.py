@@ -1,6 +1,7 @@
 from run import app
 from flask import Flask,flash,redirect,url_for,render_template,request
 
+@app.route("/admin/home")
 @app.route("/admin/blog", methods=["GET","POST"])
 def blog():
     from modules import Blogs
