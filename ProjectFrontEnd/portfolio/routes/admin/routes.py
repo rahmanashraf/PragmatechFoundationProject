@@ -39,6 +39,22 @@ def blog_delete(id):
     return redirect ("/admin/blog")
 
 
+@app.route("/blogEdit/<int:id>",methods=["GET","POST"])
+def blog_edit(id):
+    from modules import Blogs
+    from run import db
+    newBlogs = Blogs.query.filter_by(id=id).first()
+    if request.method=="POST":
+        blogs = Blogs.query.filter_by(id=id).first()
+        blogs.blog_title = request.form["blog_title"]   
+        blogs.blog_content = request.form["blog_content"]
+        db.session.commit()
+        return redirect("/")
+    return render_template ("/admin/update_blog.html",newBlogs=newBlogs)
+
+
+
+
 @app.route("/admin/home", methods=["GET","POST"])
 def home():
     from modules import Home
@@ -47,15 +63,9 @@ def home():
     from werkzeug.utils import secure_filename
     homes = Home.query.all()
     if request.method == "POST":
-        # file = request.files['home_img']
-        # filename = secure_filename(file.filename)
-        # file.save(os.path.join('static/uploads/', filename))
-        # print(filename)
-        # print(homes.home_img)
         home_content = request.form["home_content"]
         home = Home(
             home_content = home_content,
-            # home_img = os.path.join('static/uploads/', filename),
         )
         db.session.add(home)
         db.session.commit()
@@ -65,11 +75,21 @@ def home():
 @app.route("/homeDelete/<int:id>",methods=["GET","POST"])
 def home_delete(id):
     from modules import Home
-    import os
     from run import db
     homes = Home.query.filter_by(id=id).first()
-    # filename = homes.home_img
-    # os.unlink(os.path.join(filename))
     db.session.delete(homes)
     db.session.commit()
     return redirect ("/admin/home")
+
+@app.route("/homeEdit/<int:id>",methods=["GET","POST"])
+def home_edit(id):
+    from modules import Home
+    from run import db
+    newHome = Home.query.filter_by(id=id).first()
+    if request.method=="POST":
+        blogs = Home.query.filter_by(id=id).first()
+        blogs.blog_title = request.form["blog_title"]   
+        blogs.blog_content = request.form["blog_content"]
+        db.session.commit()
+        return redirect("/")
+    return render_template ("/admin/update_blog.html",newBlogs=newBlogs)
