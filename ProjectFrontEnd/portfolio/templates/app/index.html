@@ -20,12 +20,14 @@
 <body>
     <section id="mainpage">
         <div class="container">
+
             <div class="row">
                 <div class="col-5">
                     <div class="dif-color">
                     </div>
                     <div class="header-photo">
-                        <img src="../../static/images/GRREMN-removebg-preview.png" alt="">
+
+                        <img src="/static/images/IMG_7011.jpeg" alt="">
                     </div>
                 </div>
                 <div class="col-6">
@@ -33,7 +35,10 @@
 
                         <h1>RAHMAN ASHRAF</h1>
                         <h2>WEB DEVELOPER</h2>
-                        <p>Mən Azərbaycanlı veb developer namizədiyəm. Bu günə qədər hər zaman arxasıyca qaçdığım, həmişə marağında olduğum peşə məhz bu idi. İnşallah arzuladığım həyata bu yol ilə sahib olacağam.</p>
+                        {% for home in homes %}
+                        <p>{{home.home_content}}</p>
+                        {% endfor %}
+
                         <div class="test">
                             <button>Daha ətraflı...
                                 <i class="fas fa-arrow-right"></i>
@@ -285,5 +290,7 @@
     <script src="script.js"></script>
 
 </body>
+
+</html>
 
 </html>

@@ -1,7 +1,8 @@
 from run import app
 from flask import Flask,flash,redirect,url_for,render_template,request
 
-@app.route("/admin/home")
+
+
 @app.route("/admin/blog", methods=["GET","POST"])
 def blog():
     from modules import Blogs
@@ -36,3 +37,39 @@ def blog_delete(id):
     db.session.delete(blogs)
     db.session.commit()
     return redirect ("/admin/blog")
+
+
+@app.route("/admin/home", methods=["GET","POST"])
+def home():
+    from modules import Home
+    import os
+    from run import db
+    from werkzeug.utils import secure_filename
+    homes = Home.query.all()
+    if request.method == "POST":
+        # file = request.files['home_img']
+        # filename = secure_filename(file.filename)
+        # file.save(os.path.join('static/uploads/', filename))
+        # print(filename)
+        # print(homes.home_img)
+        home_content = request.form["home_content"]
+        home = Home(
+            home_content = home_content,
+            # home_img = os.path.join('static/uploads/', filename),
+        )
+        db.session.add(home)
+        db.session.commit()
+        return redirect ("/admin/home")
+    return render_template("admin/home.html", homes=homes)
+
+@app.route("/homeDelete/<int:id>",methods=["GET","POST"])
+def home_delete(id):
+    from modules import Home
+    import os
+    from run import db
+    homes = Home.query.filter_by(id=id).first()
+    # filename = homes.home_img
+    # os.unlink(os.path.join(filename))
+    db.session.delete(homes)
+    db.session.commit()
+    return redirect ("/admin/home")
