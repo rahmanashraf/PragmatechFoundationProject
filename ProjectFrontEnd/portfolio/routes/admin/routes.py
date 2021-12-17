@@ -81,15 +81,14 @@ def home_delete(id):
     db.session.commit()
     return redirect ("/admin/home")
 
-@app.route("/homeEdit/<int:id>",methods=["GET","POST"])
+@app.route("/homeUpdate/<int:id>",methods=["GET","POST"])
 def home_edit(id):
     from modules import Home
     from run import db
     newHome = Home.query.filter_by(id=id).first()
     if request.method=="POST":
-        blogs = Home.query.filter_by(id=id).first()
-        blogs.blog_title = request.form["blog_title"]   
-        blogs.blog_content = request.form["blog_content"]
+        homes = Home.query.filter_by(id=id).first()  
+        homes.home_coontent = request.form["home_content"]
         db.session.commit()
         return redirect("/")
-    return render_template ("/admin/update_blog.html",newBlogs=newBlogs)
+    return render_template ("/admin/update_home.html",newHome=newHome)

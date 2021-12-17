@@ -11,6 +11,9 @@ class Home(db.Model):
     home_content = db.Column(db.String(1000))
 
 
-
+class Skills (db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    skills_img = db.Column(db.String(150))
+    skills_title = db.Column(db.String(50))
 
 
