@@ -117,18 +117,13 @@
     <section id="skills">
         <div class="container">
             <h1>MY SKILLS</h1>
-            <div class="skills">
-                <div class="skills_ul">
-                    <div class="skills_li"><span>HTML5</span><img src="/static/images/html5.png" width="100px" height="100px" alt=""></div>
-                    <div class="skills_li"><span>CSSS3</span><img src="/static/images/css3.png" width="100px" height="100px" alt=""></div>
-                    <div class="skills_li"><span>BOOTSTRAP</span><img src="/static/images/bootstrap.png" width="100px" height="100px" alt=""></div>
-                    <div class="skills_li"><span>JAVASCRIPT</span><img src="/static/images/javascript.png" width="100px" height="100px" alt=""></div>
-                    <div class="skills_li"><span>PYTHON</span><img src="/static/images/python.png" width="100px" height="100px" alt=""></div>
-                    <div class="skills_li"><span>FLASK</span><img src="/static/images/flask.png" width="100px" height="100px" alt=""></div>
-                    <div class="skills_li"><span>C#</span><img src="/static/images/csharp.png" width="100px" height="100px" alt=""></div>
-                    <!-- <div class="skills_li"><span>DJANGO</span><img src="/static/images/django.png" width="100px" height="100px" alt=""></div> -->
-                </div>
+            <!-- <div class="skills"> -->
+            <div class="skills_ul">
+                {% for skill in skills %}
+                <div class="skills_li"><span>{{skill.skills_title}}</span><img src="{{skill.skills_img}}" width="100px" height="100px" alt=""></div>
+                {% endfor %}
             </div>
+
         </div>
     </section>
     <!-- MY skills end -->

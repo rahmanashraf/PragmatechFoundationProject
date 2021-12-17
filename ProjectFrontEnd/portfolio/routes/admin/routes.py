@@ -92,3 +92,25 @@ def home_edit(id):
         db.session.commit()
         return redirect("/")
     return render_template ("/admin/update_home.html",newHome=newHome)
+
+
+@app.route("/admin/skills", methods=["GET","POST"])
+def skills():
+    from modules import Skills
+    import os
+    from run import db
+    from werkzeug.utils import secure_filename
+    skills = Skills.query.all()
+    if request.method == "POST":
+        file = request.files['skills_img']
+        filename = secure_filename(file.filename)
+        file.save(os.path.join('static/uploads/', filename))
+        skills_title = request.form["skills_title"]
+        sklls = Skills(
+            skills_title = skills_title,
+            skills_img = os.path.join('static/uploads/', filename),
+        )
+        db.session.add(sklls)
+        db.session.commit()
+        return redirect ("/admin/skills")
+    return render_template("admin/skills.html", skills=skills)
