@@ -114,3 +114,15 @@ def skills():
         db.session.commit()
         return redirect ("/admin/skills")
     return render_template("admin/skills.html", skills=skills)
+
+@app.route("/skillsDelete/<int:id>",methods=["GET","POST"])
+def skills_delete(id):
+    from modules import Skills
+    import os
+    from run import db
+    skills = Skills.query.filter_by(id=id).first()
+    filename = skills.skills_img
+    os.unlink(os.path.join(filename))
+    db.session.delete(skills)
+    db.session.commit()
+    return redirect ("/admin/skills")
