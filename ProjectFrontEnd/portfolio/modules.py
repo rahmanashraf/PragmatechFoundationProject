@@ -6,6 +6,7 @@ class Blogs(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     blog_img = db.Column(db.String(150))
     blog_title = db.Column(db.String(50))
+    blog_url = db.Column(db.Text)
     blog_content = db.Column(db.String(150))
 
 class Home(db.Model):

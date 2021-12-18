@@ -80,9 +80,11 @@ def blog():
         file.save(os.path.join('static/uploads/', filename))
         blog_title = request.form["blog_title"]
         blog_content = request.form["blog_content"]
+        blog_url = request.form["blog_url"]
         blg = Blogs(
             blog_title = blog_title,
             blog_content = blog_content,
+            blog_url=blog_url,
             blog_img = os.path.join('static/uploads/', filename),
         )
         db.session.add(blg)
@@ -114,6 +116,7 @@ def blog_edit(id):
         blogs = Blogs.query.filter_by(id=id).first()
         blogs.blog_title = request.form["blog_title"]   
         blogs.blog_content = request.form["blog_content"]
+        blogs.blog_url=request.form["blog_url"]
         db.session.commit()
         return redirect("/")
     return render_template ("/admin/update_blog.html",newBlogs=newBlogs)
