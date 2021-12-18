@@ -58,7 +58,7 @@ def admin_contact():
             contact_email=contact_email,
             contact_title=contact_title
         )
-        msg=Message(contact_title, body=contact_message, sender=contact_email, recipients = ["airbnbaku@gmail.com"])
+        msg=Message(contact_title, body=contact_message + " " + contact_email + " " + "tərəfindən göndərilmişdir" , sender=contact_email, recipients = ["airbnbaku@gmail.com"])
         mail.send(msg)
         db.session.add(salam)
         db.session.commit()
