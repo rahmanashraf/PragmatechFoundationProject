@@ -186,11 +186,11 @@
                 <div class="grid-items">
                     {% for project in projects%}
                     <div class="col-4">
-                        <img src="{{project.project_img}}" alt="">
-                        <a href="{{project.project_url}}"></a>
+                        <a href="{{project.project_url}}"><img src="{{project.project_img}}" alt=""> </a>
                     </div>
+                    {%endfor%}
                 </div>
-                {%endfor%}
+
             </div>
         </div>
     </section>

@@ -160,14 +160,3 @@ def project_delete(id):
     db.session.commit()
     return redirect ("/admin/projects")
 
-@app.route("/projectEdit/<int:id>",methods=["GET","POST"])
-def project_edit(id):
-    from modules import Projects
-    from run import db
-    newProject = Projects.query.filter_by(id=id).first()
-    if request.method=="POST":
-        projects = Projects.query.filter_by(id=id).first()
-        projects.project_url = request.form["project_url"]
-        db.session.commit()
-        return redirect("/")
-    return render_template ("/admin/update_project.html",newProject=newProject)
