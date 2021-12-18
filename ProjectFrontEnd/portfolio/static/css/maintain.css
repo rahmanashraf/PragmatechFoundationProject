@@ -403,13 +403,11 @@ iwler gorunmelidi.... */
         gap: 25px;
         padding: 10px;
         justify-content: center;
-        padding-top: 60px;
-        padding-bottom: 30px;
+        width: 200%;
+        height: 300px;
     }
     
     .grid-items img {
-        width: 300px;
-        height: 200px;
         cursor: pointer;
         object-fit: cover;
     }
