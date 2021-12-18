@@ -184,18 +184,13 @@
         <div class="container">
             <div class="row">
                 <div class="grid-items">
-                    <div class="col-4"><img src="../../static/images/IMG_7011.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_7052.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_7124.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_7133.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_7223.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_7686.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_7977.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_8921.jpeg" alt=""></div>
-                    <div class="col-4"><img src="../../static/images/IMG_9001.jpeg" alt=""></div>
+                    {% for project in projects%}
+                    <div class="col-4">
+                        <img src="{{project.project_img}}" alt="">
+                        <a href="{{project.project_url}}"></a>
+                    </div>
                 </div>
-
-
+                {%endfor%}
             </div>
         </div>
     </section>

@@ -5,7 +5,9 @@ def portfolio():
     from modules import Blogs
     from modules import Home
     from modules import Skills
+    from modules import Projects
     homes=Home.query.all()
     blogs = Blogs.query.all()
     skills = Skills.query.all()
-    return render_template("app/index.html", blogs=blogs,homes=homes,skills=skills)
+    projects=Projects.query.all()
+    return render_template("app/index.html", blogs=blogs,homes=homes,skills=skills,projects=projects)
