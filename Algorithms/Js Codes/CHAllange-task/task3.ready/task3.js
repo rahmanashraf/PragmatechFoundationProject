@@ -1,7 +1,7 @@
 const text = document.getElementById('text')
-const prog = 'We Love Programming brat'
+const prog = 'WE Love Proggraming Bro'
 let idx = 1;
-setInterval(writetext, 300)
+setInterval(writetext, 500)
 
 function writetext() {
     text.innerText = prog.slice(0, idx)
