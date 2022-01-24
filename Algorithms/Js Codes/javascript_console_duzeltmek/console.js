@@ -2,7 +2,7 @@ let x = 10
 
 
 function soladon() {
-    document.querySelector(".joystick").style.transform = `translate(-${x}px,0px)`
+    document.querySelector(".joystick").style.display = `translate(-${x}px,0px)`
     x += 20
 
 }
