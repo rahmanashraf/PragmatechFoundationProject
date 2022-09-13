@@ -1,5 +1,5 @@
 const text = document.getElementById('text')
-const prog = 'WE Love Proggraming Bro'
+const prog = 'MAL HULYA'
 let idx = 1;
 setInterval(writetext, 500)
 
